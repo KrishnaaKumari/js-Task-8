@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Task-8</title>
+        <style>
+            h1{
+                color: blue;
+            }
+            .container{ 
+                display: block;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img id="result" src="./image.png" width="400" height="300"></img>
+            <h1>Click the following buttons to handle animation</h1>
+            <button type="button" onclick="fun1()" id="on">Start</button>
+            <button type="button" onclick="fun2()" id="off">Stop</button>
+        </div> 
+        <script>
+            function fun1(){
+                document.getElementById("result").src="https://i.pinimg.com/originals/37/1f/54/371f54e6c0a67937bcca57b8ef8fa929.gif";
+            }
+            function fun2(){
+                document.getElementById("result").src="./image.png";
+            }
+        </script>
+    </body>
+</html>
